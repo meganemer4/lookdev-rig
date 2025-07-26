@@ -1,8 +1,8 @@
 """
 lookdev Turntable Rig Python Script (for Houdini & Mantra)
 by Megan White 
-July 2025
 
+Made with Houdini 20.5
 """
 
 import hou
@@ -572,6 +572,11 @@ def create_lookdev_envlight_rig_with_ui():
     mantra.parm("forceobject").set(lookdev_refs.path() + " " + sweep.path() + " " + object_path)
     mantra.parm("alights").set("")
     mantra.parm("forcelights").set(env.path())
+    hou.playbar.setFrameRange(start_frame, start_frame + 200)
+    hou.playbar.setPlaybackRange(start_frame, start_frame + 200)
+    mantra.parm("trange").set(1)
+    mantra.parm("f1").set(start_frame)
+    mantra.parm("f2").set(start_frame + 200)
     
 
     
