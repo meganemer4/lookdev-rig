@@ -23,7 +23,7 @@ This script generates a customizable Houdini lookdev rig for rendering a turntab
 
 
 Tips:
-- Make sure there are no transforms on the geometry node of the model. All transforms should be done inside of the node.
+- Make sure there are no transforms on the geometry node that contains the model. All transforms should be done inside of the node.
 - This script will only work properly if run on the obj level
 - If rendering with the lookdev refs (balls and chart), it's best to stay at 16:9 to avoid placement issues. 
 - Many HDRIs will work best at the default 0 rotation, especially if downloaded from HDRI Haven
